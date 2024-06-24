@@ -1,0 +1,100 @@
+:root{
+     --Soft-blue: hsl(215, 51%, 70%);
+     --Cyan: hsl(178, 100%, 50%);
+     --Very-dark-blue-main : hsl(217, 54%, 11%);
+     --Very-dark-blue-card: hsl(216, 50%, 16%);
+     --Very-dark-blue-line: hsl(215, 32%, 27%);
+     --White: hsl(0, 0%, 100%);
+
+}
+
+body{background-color: var(--Very-dark-blue-main);}
+
+.container{position: absolute;
+          top:50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: var(--Very-dark-blue-card);
+          height: 500px; 
+          width: 300px; 
+          border-radius: 20px;   
+          padding:20px 20px 30px 20px;   
+}
+
+.images{ width: 300px;
+          height: 60%;
+          border-radius: 20px;
+          cursor: pointer;
+
+}
+
+.images:hover{background-color: var(--Cyan);}
+
+.cube{width: 300px;
+     height:100%;
+     border-radius:20px;
+}
+
+.icon-view{position: absolute;
+          top:28%;
+          right: 43%;
+}
+
+
+.cube:hover{opacity: 0.4;
+}
+
+h1, p {color: var(--White);
+     font-family: "Roboto";
+    
+}
+
+h1{font-size: 18px;
+     font-weight: 600;
+}
+
+h1:hover{color:var(--Cyan);
+     cursor: pointer;      
+}
+
+p{font-size: 15px;
+     font-weight: 300;
+     
+}
+
+.units{display: flex;
+     justify-content: space-between;
+     height: 20px;
+     align-items: center;
+     
+    
+}
+
+.eth{color: var(--Cyan);}
+
+.line{height: 2px;
+     background-color: var(--Very-dark-blue-line);
+     margin-bottom: 10px;
+     margin-top: 20px;
+     border-radius: 20px;
+}
+
+.info{display: flex;
+     height: 40px;
+     align-items: center;
+   
+}
+
+.pic{height: 30px;
+     padding-right: 10px;
+}
+
+.jules{word-spacing:3px;}
+
+span:hover{color: var(--Cyan);
+          cursor: pointer;
+}
+
+@media(max-width:560px){
+     body{width: 80vw;}
+}
